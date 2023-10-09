@@ -16,7 +16,6 @@ describe('Cadastro', () => {
         cy.clicarBuscarCepButton();
         cy.inserirNumberAddress();
         cy.inserirAddressDetails();
-        //cy.contains(deliveryMethod, 'Moto').click();/////////////
         cy.selecionarDeliveryMethod();
 
         cy.inserirImageCnh();
