@@ -1,5 +1,3 @@
-const fakerBR = require('faker-br');
-
 describe('Cadastro', () => {
     it('Deve permitir que o usuário cadastre-se como entregador', () => {
         cy.viewport(1440, 900);
@@ -17,10 +15,9 @@ describe('Cadastro', () => {
         cy.inserirNumberAddress();
         cy.inserirAddressDetails();
         cy.selecionarDeliveryMethod();
-
         cy.inserirImageCnh();
         cy.clicarSuccessButton();
         cy.clicarConfirmButton();
         cy.validarTelaHome();
-    })
-})
+    });
+});

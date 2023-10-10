@@ -26,7 +26,7 @@ Cypress.Commands.add('inserirCodigoPostal', () => {
 
 Cypress.Commands.add('clicarBuscarCepButton', () => {
     cy.buscarCepButton().click();
-})
+});
 
 Cypress.Commands.add('inserirNumberAddress', () => {
     cy.numberAddress().type(fakerBR.random.number());
