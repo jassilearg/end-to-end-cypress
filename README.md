@@ -6,4 +6,4 @@ Algumas habilidades exercitadas:
 - Manipulação principais os elementos encontrados em aplicações web;
 - Organização de diretórios;
 
-Projeto foi aperfeiçoado inspirado no curso Cypress Discovery, da Udemy.
+Projeto inspirado no curso Cypress Discovery, da Udemy.
