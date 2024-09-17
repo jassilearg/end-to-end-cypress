@@ -53,3 +53,7 @@ Cypress.Commands.add('successButton', () => {
 Cypress.Commands.add('confirmButton', () => {
     cy.get('.swal2-actions button[style="display: inline-block;"]');
 });
+
+Cypress.Commands.add('erroCampoVazio', () => {
+    cy.get('.alert-error');
+});

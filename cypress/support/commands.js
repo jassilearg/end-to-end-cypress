@@ -51,3 +51,31 @@ Cypress.Commands.add('clicarSuccessButton', () => {
 Cypress.Commands.add('clicarConfirmButton', () => {
     cy.confirmButton().click();
 });
+
+Cypress.Commands.add('validarMensagemErroNome', () => {
+    cy.erroCampoVazio().should('be.visible').and('have.text', 'É necessário informar o nomeÉ necessário informar o CPFÉ necessário informar o emailÉ necessário informar o CEPÉ necessário informar o número do endereçoSelecione o método de entregaAdicione uma foto da sua CNH');
+});
+
+Cypress.Commands.add('validarMensagemErroCpf', () => {
+    cy.erroCampoVazio().should('be.visible').and('have.text', 'É necessário informar o CPF');
+});
+
+Cypress.Commands.add('validarMensagemErroEmail', () => {
+    cy.erroCampoVazio().should('be.visible').and('have.text', 'É necessário informar o email');
+});
+
+Cypress.Commands.add('validarMensagemErroCep', () => {
+    cy.erroCampoVazio().should('be.visible').and('have.text', 'É necessário informar o CEP');
+});
+
+Cypress.Commands.add('validarMensagemErroNumeroEndereco', () => {
+    cy.erroCampoVazio().should('be.visible').and('have.text', 'É necessário informar o número do endereço');
+});
+
+Cypress.Commands.add('validarMensagemMetodoEntrega', () => {
+    cy.erroCampoVazio().should('be.visible').and('have.text', 'Selecione o método de entrega');
+});
+
+Cypress.Commands.add('validarMensagemErroFotoCnh', () => {
+    cy.erroCampoVazio().should('be.visible').and('have.text', 'Adicione uma foto da sua CNH');
+});
